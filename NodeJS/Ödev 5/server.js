@@ -4,22 +4,22 @@ const server = http.createServer((req, res) => {
     const url = req.url
 
     if (url === '/') {
-        res.writeHead(200, {"content-type": "text/html"})
+        res.writeHead(200, {"content-type": "text/html;charset=utf-8"})
         res.write("<h2>Index sayfasına hoşgeldiniz.</h2>")
     }
 
     else if (url === '/hakkimda') {
-        res.writeHead(200, {"content-type": "text/html"})
+        res.writeHead(200, {"content-type": "text/html;charset=utf-8"})
         res.write("<h2>Hakkımda sayfasına hoşgeldiniz.</h2>")
     }
 
     else if (url === '/iletisim') {
-        res.writeHead(200, {"content-type": "text/html"})
+        res.writeHead(200, {"content-type": "text/html;charset=utf-8"})
         res.write("<h2>İletişim sayfasına hoşgeldiniz</h2>")
     }
 
     else {
-        res.writeHead(404, {"content-type": "text/html"})
+        res.writeHead(404, {"content-type": "text/html;charset=utf-8"})
         res.write("<h2>404 Sayfa bulunamadı.</h2>")
     }
 
